@@ -1,0 +1,29 @@
+# DVFS Research
+
+This repository contains useful scripts and programs used to gather data for our project for UVA's CS 6501/4501: Hardware Security (Spring 2023)
+
+## Commands we found useful while doing this research
+
+#### Run a program on a particular core:
+`taskset -c <comma deliminated list of cores> <program>`
+
+Example: `taskset -c 22,23 ./a.out`
+
+#### Get possible core frequency boundaries
+Get lowest possible freq: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
+
+Get highest possible freq: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
+
+#### Get current core frequency scaling boundaries
+min: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
+
+max: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
+
+#### Change core frequency scaling boundary
+`echo <freq> > /sys/devices/system/cpu/cpu23/cpufreq/scaling_(min|max)_freq`
+
+Example: `echo 1200000 > /sys/devices/system/cpu/cpu23/cpufreq/scaling_max_freq`
+
+#### Measure core freq
+Measure the freq of core 23: `cat /sys/devices/system/cpu/cpu23/cpufreq/scaling_cur_freq`
+Measure freq of core 23 (alternate method): `cpufreq-aperf -c 23 -o` (Note: we found this to be unreliable)
