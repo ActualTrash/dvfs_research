@@ -1,6 +1,10 @@
 # DVFS Research
 
-This repository contains useful scripts and programs used to gather data for our project for UVA's CS 6501/4501: Hardware Security (Spring 2023)
+This repository contains useful scripts and programs used to gather data for our project for UVA's CS 6501/4501: Hardware Security (Spring 2023).
+
+## What is in this repo
+
+The program we used to record data is in `data_recorder/`. The experiment code is in `experiments`. There are several scripts in `data_recorder/data_processing` that we used to convert data and produce graphs.
 
 ## Commands we found useful while doing this research
 
