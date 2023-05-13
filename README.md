@@ -14,17 +14,17 @@ The program we used to record data is in `data_recorder/`. The experiment code i
 Example: `taskset -c 22,23 ./a.out`
 
 #### Get possible core frequency boundaries
-Get lowest possible freq: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
+Get lowest possible freq for core 23: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
 
-Get highest possible freq: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
+Get highest possible freq for core 23: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
 
 #### Get current core frequency scaling boundaries
-min: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
+min for core 23: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq`
 
-max: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
+max for core 23: `cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq`
 
 #### Change core frequency scaling boundary
-`echo <freq> > /sys/devices/system/cpu/cpu23/cpufreq/scaling_(min|max)_freq`
+`echo <freq> > /sys/devices/system/cpu/cpu<core id>/cpufreq/scaling_(min|max)_freq`
 
 Example: `echo 1200000 > /sys/devices/system/cpu/cpu23/cpufreq/scaling_max_freq`
 
