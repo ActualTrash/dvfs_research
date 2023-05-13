@@ -1,0 +1,3 @@
+alias setmin='cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_min_freq > /sys/devices/system/cpu/cpu23/cpufreq/scaling_max_freq'
+alias setmax='cat /sys/devices/system/cpu/cpu23/cpufreq/cpuinfo_max_freq > /sys/devices/system/cpu/cpu23/cpufreq/scaling_max_freq'
+alias freq='cat /sys/devices/system/cpu/cpu23/cpufreq/scaling_cur_freq'
