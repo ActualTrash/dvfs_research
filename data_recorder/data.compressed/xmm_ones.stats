@@ -1,0 +1,17 @@
+[*] Started experiment. Waiting 5000 ms for DVFS to kick in.
+[*] Starting monitoring on CPU 23 with 10000000 samples
+[*] Done recording (68202 ms). Writing data to data/xmm_ones.csv
+
+Statistics
+==========
+Total number of samples:	10000000
+Frequency histogram
+  Range			Count	Percent
+  [3100000, 4000000)	596	(0.01%)
+  [3050000, 3100000)	9384461	(93.84%)
+  [3000000, 3050000)	286049	(2.86%)
+  [2500000, 3000000)	328894	(3.29%)
+  [2000000, 2500000)	0	(0.00%)
+  [1200000, 2000000)	0	(0.00%)
+  [1000000, 1200000)	0	(0.00%)
+
