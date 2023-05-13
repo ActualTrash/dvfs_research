@@ -1,5 +1,6 @@
 # Files are too big to upload to github
 data_recorder/data
+data_recorder/record_data
 
 # Binary and object files
 experiment/*.o
