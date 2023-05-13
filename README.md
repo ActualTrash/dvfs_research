@@ -1,6 +1,6 @@
 # DVFS Research
 
-This repository contains useful scripts and programs used to gather data for our project for UVA's CS 6501/4501: Hardware Security (Spring 2023).
+This repository contains useful scripts and programs used to gather data for our project for UVA's CS 6501/4501: Hardware Security taught by Ashish Venkat (Spring 2023). Our group is comprised of Edward Lue, Ratik Mathur, and myself.
 
 ## What is in this repo
 
